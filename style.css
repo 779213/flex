@@ -85,10 +85,12 @@ main > * + * {
     flex: 1;
 }
 
+/* A COSA SERVE? .column sidebar contiene solo un elemento?? */
 .column-sidebar {
     display: flex;
     flex-direction: column;
 }
+/* in questo caso dichiarare un display flex con flex 1 è totalmente inutile */
 .column-sidebar> .tile{
     flex: 1;
 }
