@@ -14,7 +14,7 @@ body * + * {
 
 body {
     background-color: rgba(38, 120, 243, 0.64);
-    font-family: "sans-serif" ;
+    font-family:"Comic Sans MS",times,serif ;
 }
 
 .container {
@@ -73,6 +73,7 @@ main > * + * {
 
 }
 
+
 .tile :first-child {
     margin-top: 0;
 }
@@ -93,7 +94,7 @@ main > * + * {
     flex: 1;
 }
 /*SIDEBAR*/
-.login-form h3 {
+h3 {
     margin: 0;
     font-size: .9em;
     font-weight: bold;
@@ -101,11 +102,11 @@ main > * + * {
     text-align: right;
 }
 
-.login-form label {
+label {
     text-align: left;
     font-weight: bold;
 }
-.login-form input[type="text"],.login-form input[type="password"]{
+.login-form input:not([type="checkbox"],.login-form input[type="radio"]){
     display: block;
     width: 100%;
     margin-top: 0;
@@ -113,27 +114,41 @@ main > * + * {
     padding: .5em 1em;
 }
 
+.login-form button{
+    margin-top: 1em;
+    border: 1px solid green;
+    background-color: darkmagenta;
+    padding: .5em 1em;
+    cursor:pointer;
+}
+
+
 .centered{
     text-align: center;
+    background-color: #fff;
+
 }
+
 .cost{
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: .7em;
+    line-height: .7;
 }
-.cost>span{
+.cost > span{
     margin-top: 0;
 }
 .cost-currency{
-    font-size: 2em;
+    font-size: 2rem;
 }
 .cost-dollars{
-    font-size: 4em;
+    font-size: 4rem;
 }
 .cost-cents{
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    align-self:flex-start ;
 }
+
 .cta-button{
     display: block;
     background-color: blue;
